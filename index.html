@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NOSTRA SHOP</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header class="header">
+        <h1>NOSTRA</h1>
+        <p>توصيل سريع والدفع عند الاستلام</p>
+    </header>
+    <section class="products">
+        <div class="product" onclick="showProduct('T-Shirt Oversize')">
+            <img src="https://i.imgur.com/2DhmtJ4.png" alt="T-Shirt Oversize" />
+            <h2>T-Shirt Oversize</h2>
+            <p>150 درهم</p>
+        </div>
+        <div class="product" onclick="showProduct('Cagoule')">
+            <img src="https://i.imgur.com/xZqgK6N.png" alt="Cagoule" />
+            <h2>Cagoule</h2>
+            <p>70 درهم</p>
+        </div>
+    </section>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 id="productTitle"></h2>
+            <p>تفاصيل المنتج سيتم وضعها هنا</p>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>© 2025 NOSTRA. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
